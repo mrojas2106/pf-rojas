@@ -331,3 +331,24 @@ main>img {
     color: whitesmoke;
     padding-left: 10px;
 }
+
+@media (max-width: 1024px) {
+
+    .portadaInicial__izquierda-md {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portadaInicial__derecha-md {
+        display: none;
+    }
+}
+
+@media (max-width: 715px) {
+
+    .menu {
+        display:none;
+    }
+}
