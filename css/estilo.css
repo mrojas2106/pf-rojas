@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aqui empieza el header y barra de navegacion */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: #111;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo__grande {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.438rem;
+    font-weight: 400;
+    padding-left: 60px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-right: 60px;
+}
+
+.menu a {
+    padding: 17px;
+    text-decoration: none;
+    color: rgb(190, 189, 189);
+    transition: all .5s ease;
+    font-size: 1.187rem;
+}
+
+.menu a:hover {
+    color: whitesmoke;
+    background-color: rgba(83, 167, 240, 0.641);
+    cursor: pointer;
+}
+
+.menu__active>a {
+    color: whitesmoke;
+    background-color: rgba(83, 167, 240, 0.641);
+}
+
+/* Portada index */
+
+.portadaInicial {
+    display: flex;
+    background-color: coral;
+    height: 550px;
+    flex-wrap: wrap;
+}
+
+.portadaInicial__izquierda {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portadaInicial__izquierda--titulo {
+    font-size: 7.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.portadaInicial__izquierda--subtitulo {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.portadaInicial__derecha {
+    display: flex;
+    min-width: 40vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.portadaInicial__derecha--imagen {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Aqui comienza el contenido de la pagina index - noticias - pelicula - series y contacto*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main h2 {
+    margin: 0 auto;
+    font-size: 2.1875rem;
+    color: rgba(128, 128, 128, 0.51);
+    padding: 60px 40px;
+    text-decoration: overline 5px;
+    text-align: center;
+}
+
+main h3 {
+    text-align: center;
+}
+
+main>h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 60px 0px;
+    color: rgba(128, 128, 128, 0.51);
+}
+
+main>h6 {
+
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(128, 128, 128, 0.51);
+    padding-top: 60px;
+
+}
+
+main>img {
+    padding-bottom: 60px;
+}
+
+.peliculasTop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta__imagen {
+    width: 298px;
+    height: 140px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.categoriasTop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.tarjeta__cetegoria {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    background-color: rgba(83, 167, 240, 0.641);
+}
+
+.tarjeta__categoria--titulo {
+    font-size: 1.25rem;
+}
+
+.tarjeta__cetegoria a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.portada {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    justify-content: space-between;
+}
+
+
+.boxes img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.boxes h4 {
+    text-align: center;
+}
+
+.boxes span {
+    font-weight: bolder;
+    font-size: 0.75rem;
+    color: grey;
+}
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.paginas label {
+
+    display: block;
+    margin-top: 10px;
+}
+
+.paginas a {
+
+    margin: 10px;
+}
+
+/* Aqui empieza el contenido de pagina Contacto */
+
+.contacto {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+/* Aqui empieza el footer */
+
+.piePagina {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.piePagina__lista {
+    display: flex;
+    flex-direction: column;
+    color: rgba(128, 128, 128, 0.51);
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 0, 9375rem;
+}
+
+
+.piePagina__lista h5:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.piePagina__titulo-footer h6 {
+    font-size: 30px;
+    padding-left: 30px;
+    color: whitesmoke;
+    padding-top: 60px;
+}
+
+.piePagina__parrafo {
+    width: 250px;
+    overflow: hidden;
+    padding: 30px 60px;
+    color: #3b3640;
+}
+
+.piePagina__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px;
+}
+
+.piePagina__redes img {
+    width: 32px;
+    height: 32px;
+}
+
+.piePagina span {
+    display: inline-flex;
+    position: relative;
+    color: whitesmoke;
+    padding-left: 10px;
+}
