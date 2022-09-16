@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/estilo.css">
-
     <title>Cinema MAX</title>
 </head>
 
@@ -23,6 +22,8 @@
         <!-- barra de navegación -->
         <nav>
             <h1><a class="titulo__grande" href="./index.html">Cinema MAX</a></h1>
+            <div class="menu-hamburguesa"><img src="./assets/imagenes/hamburguesa.png"
+                    alt="Imagen de un menu hamburguesa" srcset=""></div>
             <ul class="menu">
                 <!-- <li class="items"><a href="#home"> Home </a></li> -->
                 <li class="items"><a href="./paginas/noticias.html"> Noticias</a></li>
@@ -31,64 +32,66 @@
                 <li class="items"><a href="./paginas/contacto.html"> Contacto</a></li>
             </ul>
         </nav>
-
-
     </header>
 
     <!-- Portada de la pagina -->
-
-    <section class="portadaInicial">
-        <div class="portadaInicial__izquierda portadaInicial__izquierda-md">
-            <h2 class="portadaInicial__izquierda--titulo">Cinema MAX</h2>
-            <h3 class="portadaInicial__izquierda--subtitulo">La mejor forma de ver Cine</h3>
-        </div>
-        <div class="portadaInicial__derecha portadaInicial__derecha-md">
-            <img class="portadaInicial__derecha--imagen" src="./assets/imagenes/cine.png"
-                alt="Imagen de la portada - Televisor">
-        </div>
-    </section>
-
-    <!-- Contenido de la pagina -->
-
-    <main>
-        <h4> PELICULAS MAS VISTAS - TOP 3</h4>
-        <section class="peliculasTop">
-            <article class="tarjeta">
-                <img class="tarjeta__imagen" src="./assets/imagenes/sonic4.jpeg" alt="Imagen de la pelicula">
-                <h5 class="tarjeta__titulo">Titulo de la pelicula</h5>
-                <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est itaque.
-                    Minima voluptate </p>
-            </article>
-            <article class="tarjeta">
-                <img class="tarjeta__imagen" src="./assets/imagenes/sonic3.jpg" alt="Imagen de la pelicula">
-                <h5 class="tarjeta__titulo">Titulo de la pelicula</h5>
-                <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est itaque.
-                    Minima voluptate </p>
-            </article>
-            <article class="tarjeta">
-                <img class="tarjeta__imagen" src="./assets/imagenes/sonic.jpg" alt="Imagen de la pelicula">
-                <h5 class="tarjeta__titulo">Titulo de la pelicula</h5>
-                <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est itaque.
-                    Minima voluptate </p>
-            </article>
+    
+    <div class="general-conteiner">
+        <section class="portadaInicial">
+            <div class="portadaInicial__izquierda portadaInicial__izquierda-md">
+                <h2 class="portadaInicial__izquierda--titulo">Cinema MAX</h2>
+                <h3 class="portadaInicial__izquierda--subtitulo">La mejor forma de ver Cine</h3>
+            </div>
+            <div class="portadaInicial__derecha portadaInicial__derecha-md">
+                <img class="portadaInicial__derecha--imagen" src="./assets/imagenes/cine.png"
+                    alt="Imagen de la portada - Televisor">
+            </div>
         </section>
-        <h6>CATEGORIAS MAS VISTAS - TOP 3</h6>
-        <section class="categoriasTop">
-            <article class="tarjeta__cetegoria">
-                <h7 class="tarjeta__categoria--titulo">Titulo de la cetegoria 1</h7>
-                <a href="#">Ingresar</a>
-            </article>
-            <article class="tarjeta__cetegoria">
-                <h7 class="tarjeta__categoria--titulo">Titulo de la cetegoria 2</h7>
-                <a href="#">Ingresar</a>
-            </article>
-            <article class="tarjeta__cetegoria">
-                <h7 class="tarjeta__categoria--titulo">Titulo de la cetegoria 3</h7>
-                <a href="#">Ingresar</a>
-            </article>
-        </section>
-    </main>
 
+        <!-- Contenido de la pagina -->
+
+        <main>
+            <h4> PELICULAS MAS VISTAS - TOP 3</h4>
+            <section class="peliculasTop">
+                <div class="tarjeta">
+                    <img class="tarjeta__imagen" src="./assets/imagenes/sonic4.jpeg" alt="Imagen de la pelicula">
+                    <h5 class="tarjeta__titulo">Titulo de la pelicula</h5>
+                    <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est
+                        itaque.
+                        Minima voluptate </p>
+                </div>
+                <div class="tarjeta">
+                    <img class="tarjeta__imagen" src="./assets/imagenes/sonic3.jpg" alt="Imagen de la pelicula">
+                    <h5 class="tarjeta__titulo">Titulo de la pelicula</h5>
+                    <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est
+                        itaque.
+                        Minima voluptate </p>
+                </div>
+                <div class="tarjeta">
+                    <img class="tarjeta__imagen" src="./assets/imagenes/sonic.jpg" alt="Imagen de la pelicula">
+                    <h5 class="tarjeta__titulo">Titulo de la pelicula</h5>
+                    <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est
+                        itaque.
+                        Minima voluptate </p>
+                </div>
+            </section>
+            <h6>CATEGORIAS MAS VISTAS - TOP 3</h6>
+            <section class="categoriasTop">
+                <div class="tarjeta__cetegoria">
+                    <h7 class="tarjeta__categoria--titulo">Titulo de la cetegoria 1</h7>
+                    <a href="#">Ingresar</a>
+                </div>
+                <div class="tarjeta__cetegoria">
+                    <h7 class="tarjeta__categoria--titulo">Titulo de la cetegoria 2</h7>
+                    <a href="#">Ingresar</a>
+                </div>
+                <div class="tarjeta__cetegoria">
+                    <h7 class="tarjeta__categoria--titulo">Titulo de la cetegoria 3</h7>
+                    <a href="#">Ingresar</a>
+                </div>
+            </section>
+        </main>
+    </div>
     <!-- Pie de pagina -->
 
     <footer class="piePagina">
@@ -114,6 +117,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

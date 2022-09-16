@@ -20,18 +20,36 @@ nav {
     display: flex;
     width: 100vw;
     height: 60px;
-    background-color: #111;
+    background-color: rgb(37, 98, 150);
     justify-content: space-between;
     align-items: center;
 }
 
 .titulo__grande {
-    color: whitesmoke;
+    color:rgb(224, 240, 254);
     text-decoration: none;
     font-family: 'DynaPuff', cursive;
     font-size: 1.438rem;
     font-weight: 400;
     padding-left: 60px;
+    transition:all 1s ease;
+}
+
+.titulo__grande:hover {
+    color: rgba(83, 167, 240, 0.641);
+}
+.menu-hamburguesa {
+    display:none;
+    width: 50px;
+    height: 50px;
+}
+.menu-hamburguesa img {
+    width: 50px;
+    height: 50px;
+}
+
+.cerrar-menu-hamburguesa {
+    display: none;
 }
 
 .menu {
@@ -43,27 +61,27 @@ nav {
 .menu a {
     padding: 17px;
     text-decoration: none;
-    color: rgb(190, 189, 189);
+    color: rgb(84, 171, 248);
     transition: all .5s ease;
     font-size: 1.187rem;
 }
 
 .menu a:hover {
     color: whitesmoke;
-    background-color: rgba(83, 167, 240, 0.641);
+    background-color: rgb(83, 167, 240);
     cursor: pointer;
 }
 
 .menu__active>a {
     color: whitesmoke;
-    background-color: rgba(83, 167, 240, 0.641);
+    background-color: rgb(83, 167, 240);
 }
 
 /* Portada index */
 
 .portadaInicial {
     display: flex;
-    background-color: coral;
+    background-color: rgb(255, 127, 80);
     height: 550px;
     flex-wrap: wrap;
 }
@@ -110,7 +128,7 @@ main {
 main h2 {
     margin: 0 auto;
     font-size: 2.1875rem;
-    color: rgba(128, 128, 128, 0.51);
+    color: rgb(83, 167, 240);
     padding: 60px 40px;
     text-decoration: overline 5px;
     text-align: center;
@@ -118,20 +136,21 @@ main h2 {
 
 main h3 {
     text-align: center;
+    padding: 0px 10px;
 }
 
 main>h4 {
     text-align: center;
     font-size: 2.5rem;
     padding: 60px 0px;
-    color: rgba(128, 128, 128, 0.51);
+    color: rgb(255, 127, 80);
 }
 
 main>h6 {
 
     text-align: center;
     font-size: 2.5rem;
-    color: rgba(128, 128, 128, 0.51);
+    color: rgb(255, 127, 80);
     padding-top: 60px;
 
 }
@@ -221,9 +240,9 @@ main>img {
     height: 100px;
     object-fit: cover;
 }
-
 .boxes h4 {
     text-align: center;
+    color:rgb(83, 167, 240);
 }
 
 .boxes span {
@@ -280,7 +299,7 @@ main>img {
     display: flex;
     width: 100%;
     height: auto;
-    background-color: #111;
+    background-color: rgb(37, 98, 150);
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -288,7 +307,7 @@ main>img {
 .piePagina__lista {
     display: flex;
     flex-direction: column;
-    color: rgba(128, 128, 128, 0.51);
+    color: white;
     justify-content: space-around;
     padding: 15px;
     font-size: 0, 9375rem;
@@ -303,7 +322,7 @@ main>img {
 .piePagina__titulo-footer h6 {
     font-size: 30px;
     padding-left: 30px;
-    color: whitesmoke;
+    color: rgb(83, 167, 240);
     padding-top: 60px;
 }
 
@@ -336,7 +355,6 @@ main>img {
 
     .portadaInicial__izquierda-md {
         width: 100vw;
-        justify-content: center;
         align-items: center;
         text-align: center;
     }
@@ -344,11 +362,43 @@ main>img {
     .portadaInicial__derecha-md {
         display: none;
     }
+
+    .series-collage {
+        padding: 0px 10px;
+    }
 }
 
 @media (max-width: 715px) {
 
     .menu {
-        display:none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position:absolute;
+        left: -70vw;
+        top: 60px;
+        background-color: rgba(37, 97, 150, 0.827);
+        z-index: 4;
+        width: 70vw;
+        height: calc(100vh - 60px);
+        transition: all 2s ease;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu a {
+        position: relative;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    .menu-active {
+        left: 0;
     }
 }
