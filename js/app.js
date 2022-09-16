@@ -1,5 +1,3 @@
-
-
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".menu-hamburguesa");
 const closeMenuBtn = document.querySelector(".general-conteiner");

@@ -10,10 +10,14 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
+    position: fixed;
+    z-index: 3;
     top: 0;
-    position: sticky;
-    z-index: 2;
 }
 
 nav {
@@ -149,12 +153,10 @@ main>h4 {
 }
 
 main>h6 {
-
     text-align: center;
     font-size: 2.5rem;
     color: rgb(255, 127, 80);
     padding-top: 60px;
-
 }
 
 main>img {
@@ -217,6 +219,13 @@ main>img {
     width: 200px;
     align-self: center;
     cursor: pointer;
+    transition: all 1s ease;
+}
+
+.tarjeta__cetegoria a:hover {
+    background-color: rgba(0, 0, 0, 0.271);
+    border: solid 2px black;
+    color: black;
 }
 
 .portada {
@@ -236,6 +245,9 @@ main>img {
     justify-content: space-between;
 }
 
+.boxes:hover {
+    transform: scale(102%);
+}
 
 .boxes img {
     width: 100%;
@@ -254,6 +266,32 @@ main>img {
     color: grey;
 }
 
+.boxes button {
+    display: none;
+}
+
+.boxes:hover>button {
+    display:block;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(126, 61, 247);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(135, 166, 238);
+    border-radius: 10px;
+    cursor: pointer;
+    top: 20px;
+    left: 0;
+    right: 0;
+    transition: all 1s ease;
+}
+
+.boxes button:hover {
+    background-color: rgb(172, 129, 251);
+}
+
 .paginas {
     display: flex;
     justify-content: center;
@@ -262,20 +300,17 @@ main>img {
 }
 
 .paginas label {
-
     display: block;
     margin-top: 10px;
 }
 
 .paginas a {
-
     margin: 10px;
 }
 
 /* Aqui empieza el contenido de pagina Contacto */
 
 .contacto {
-
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -295,22 +330,21 @@ main>img {
     justify-content: center;
     align-items: center;
     padding: 50px;
-
 }
 
 input:not(input[type="submit"]), textarea {
-border-radius: 10px;
-height: 50px;
-border-style:solid;
-border-width: 2px;
-font-size: 2rem;
-padding: 0 20px;
-transition: all 1s ease;
+    border-radius: 10px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 2rem;
+    padding: 0 20px;
+    transition: all 1s ease;
 }
 
 textarea {
-height: 300px;
-width: 400px;
+    height: 300px;
+    width: 400px;
 }
 
 input:focus, textarea:focus {
@@ -319,27 +353,26 @@ input:focus, textarea:focus {
     background-color: rgba(137, 43, 226, 0.287);
 }
 
-form > label {
+form>label {
     padding: 20px 0;
 }
 
 input[type="submit"] {
-align-self: center;
-width: 200px;
-height: 60px;
-border-radius: 20px;
-border: solid 4px rgb(110, 194, 250);
-background-color: rgba(110, 201, 244, 0.258);
-font-size: 1.6rem;
-margin: 20px 0;
-cursor: pointer;
-transition: all 1s ease;
-
+    align-self: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    border: solid 4px rgb(110, 194, 250);
+    background-color: rgba(110, 201, 244, 0.258);
+    font-size: 1.6rem;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
 input[type="submit"]:hover {
-background-color: rgba(110, 202, 244, 0.777);
-border-width: 3px;
+    background-color: rgba(110, 202, 244, 0.777);
+    border-width: 3px;
 }
 
 /* Aqui empieza el footer */
@@ -362,8 +395,11 @@ border-width: 3px;
     font-size: 0, 9375rem;
 }
 
+.piePagina__lista a {
+    color: rgb(110, 194, 250);
+}
 
-.piePagina__lista h5:hover {
+.piePagina__lista a:hover {
     color: whitesmoke;
     cursor: pointer;
 }
@@ -400,6 +436,8 @@ border-width: 3px;
     padding-left: 10px;
 }
 
+    /* Responsive - Hamburguesa Menu */
+
 @media (max-width: 1024px) {
 
     .portadaInicial__izquierda-md {
@@ -431,7 +469,7 @@ border-width: 3px;
         left: -70vw;
         top: 60px;
         background-color: rgba(37, 97, 150, 0.827);
-        z-index: 4;
+        z-index: 10;
         width: 70vw;
         height: calc(100vh - 60px);
         transition: all 2s ease;
