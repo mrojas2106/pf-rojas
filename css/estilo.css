@@ -248,6 +248,7 @@ main>img {
 
 .boxes:hover {
     transform: scale(102%);
+    cursor: pointer;
 }
 
 .boxes img {
@@ -265,32 +266,6 @@ main>img {
     font-weight: bolder;
     font-size: 0.75rem;
     color: grey;
-}
-
-.boxes button {
-    display: none;
-}
-
-.boxes:hover>button {
-    display:block;
-    position: absolute;
-    margin: auto;
-    z-index: 2;
-    width: 150px;
-    height: 50px;
-    background-color: rgb(126, 61, 247);
-    color: rgb(255, 255, 255);
-    border: 3px solid rgb(135, 166, 238);
-    border-radius: 10px;
-    cursor: pointer;
-    top: 20px;
-    left: 0;
-    right: 0;
-    transition: all 1s ease;
-}
-
-.boxes button:hover {
-    background-color: rgb(172, 129, 251);
 }
 
 .paginas {
@@ -383,9 +358,9 @@ input[type="submit"]:hover {
     width: 100%;
     height: auto;
     background-color: rgb(37, 98, 150);
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 30px 0;
+    padding: 30px 80px;
 }
 
 .piePagina__lista {
@@ -393,7 +368,6 @@ input[type="submit"]:hover {
     flex-direction: column;
     color: white;
     justify-content: space-around;
-    padding-left: 15px;
     font-size: 0, 9375rem;
 }
 
@@ -409,22 +383,21 @@ input[type="submit"]:hover {
 
 .piePagina__titulo-footer h6 {
     font-size: 30px;
-    padding-left: 30px;
     color: rgb(83, 167, 240);
-    padding-top: 40px;
+    padding-top:30px;
 }
 
 .piePagina__parrafo {
     width: 250px;
     overflow: hidden;
-    padding: 30px 60px;
+    padding: 30px 0;
     color: #3b3640;
 }
 
 .piePagina__redes {
     display: flex;
     flex-direction: column;
-    padding: 25px 10px;
+    padding: 25px 0;
 }
 
 .piePagina__redes img {
@@ -436,10 +409,9 @@ input[type="submit"]:hover {
     display: inline-flex;
     position: relative;
     color: whitesmoke;
-    padding-left: 10px;
 }
 
-    /* Responsive - Hamburguesa Menu */
+/* Responsive - Hamburguesa Menu */
 
 @media (max-width: 1024px) {
 
@@ -497,12 +469,16 @@ input[type="submit"]:hover {
     .menu-active {
         left: 0;
     }
+
+    .noMostrar {
+    display: none;
+    }
 }
 
 /* form responsive */
 
 @media (max-width: 450px) {
     input:not(input[type="submit"]), textarea {
- width: 90vw;
+        width: 90vw;
     }
 }
