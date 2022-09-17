@@ -385,6 +385,7 @@ input[type="submit"]:hover {
     background-color: rgb(37, 98, 150);
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px 0;
 }
 
 .piePagina__lista {
@@ -392,12 +393,13 @@ input[type="submit"]:hover {
     flex-direction: column;
     color: white;
     justify-content: space-around;
-    padding: 15px;
+    padding-left: 15px;
     font-size: 0, 9375rem;
 }
 
 .piePagina__lista a {
     color: rgb(110, 194, 250);
+    align-self: center;
 }
 
 .piePagina__lista a:hover {
@@ -409,7 +411,7 @@ input[type="submit"]:hover {
     font-size: 30px;
     padding-left: 30px;
     color: rgb(83, 167, 240);
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .piePagina__parrafo {
@@ -456,9 +458,11 @@ input[type="submit"]:hover {
     }
 
     iframe {
-        width: 100vw;
+        width: 80vw;
     }
 }
+
+/* Menu Hamburguesa */
 
 @media (max-width: 715px) {
 
@@ -492,5 +496,13 @@ input[type="submit"]:hover {
 
     .menu-active {
         left: 0;
+    }
+}
+
+/* form responsive */
+
+@media (max-width: 450px) {
+    input:not(input[type="submit"]), textarea {
+ width: 90vw;
     }
 }
