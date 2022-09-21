@@ -390,7 +390,7 @@ input[type="submit"]:hover {
 .piePagina__titulo-footer h6 {
     font-size: 30px;
     color: rgb(83, 167, 240);
-    padding-top:30px;
+    padding-top: 30px;
 }
 
 .piePagina__parrafo {
@@ -508,7 +508,7 @@ input[type="submit"]:hover {
     }
 
     .noMostrar {
-    display: none;
+        display: none;
     }
 }
 
@@ -517,5 +517,17 @@ input[type="submit"]:hover {
 @media (max-width: 450px) {
     input:not(input[type="submit"]), textarea {
         width: 90vw;
+    }
+
+    .portadaInicial__izquierda--titulo {
+        font-size: 6.5rem;
+    }
+
+    .portadaInicial__izquierda--subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .portadaInicial {
+        height: 850px;
     }
 }

@@ -1,7 +1,7 @@
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".menu-hamburguesa");
 const closeMenuBtn = document.querySelector(".general-conteiner");
-const apareceTitulo = document.querySelector(".efectoDesaparecer-no");
+const apareceTitulos = document.querySelectorAll(".efectoDesaparecer-no");
 const boxes = document.querySelectorAll(".tarjeta");
 
 function abrirMenu() {
@@ -22,8 +22,12 @@ window.onscroll = function(){
   scroll = document.documentElement.scrollTop;
 
   if (scroll >= 130){
-    apareceTitulo.classList.add("efectoDesaparecer-si");
-    apareceTitulo.classList.add("titulo-position");
+
+    for (const titulo of apareceTitulos) {
+      titulo.classList.add("efectoDesaparecer-si");
+      titulo.classList.add("titulo-position");
+    }
+    
   } 
 
  if (scroll >=280) {
@@ -34,17 +38,19 @@ window.onscroll = function(){
 
 }
 
-if (window.matchMedia("(max-width: 450px)").matches) {
+if (window.matchMedia("(max-width: 360px)").matches) {
   window.onscroll = function(){
 
     scroll = document.documentElement.scrollTop;
   
-    if (scroll >= 350){
-      apareceTitulo.classList.add("efectoDesaparecer-si");
-      apareceTitulo.classList.add("titulo-position");
+    if (scroll >= 550){
+      for (const titulo of apareceTitulos) {
+        titulo.classList.add("efectoDesaparecer-si");
+        titulo.classList.add("titulo-position");
+      }
     } 
   
-   if (scroll >=480) {
+   if (scroll >=680) {
     for (const box of boxes) {
       box.classList.add("efectoDesaparecer-si");
     }
