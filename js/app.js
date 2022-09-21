@@ -5,13 +5,13 @@ const apareceTitulos = document.querySelectorAll(".efectoDesaparecer-no");
 const boxes = document.querySelectorAll(".tarjeta");
 
 function abrirMenu() {
-  menu.classList.add("menu-active");
-  openMenuBtn.classList.add("noMostrar")
+  menu.classList.toggle("menu-active");
+  openMenuBtn.classList.add("noMostrar");
 }
 
 function cerrarMenu() {
-  menu.classList.remove("menu-active")
-  openMenuBtn.classList.remove("noMostrar")
+  menu.classList.remove("menu-active");
+  openMenuBtn.classList.remove("noMostrar");
 }
 
 openMenuBtn.addEventListener("click", abrirMenu);
