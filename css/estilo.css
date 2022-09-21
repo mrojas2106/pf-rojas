@@ -486,7 +486,7 @@ input[type="submit"]:hover {
         z-index: 10;
         width: 70vw;
         height: calc(100vh - 60px);
-        transition: all 2s ease;
+        transition: all 1s ease;
         align-items: center;
         justify-content: space-around;
     }
