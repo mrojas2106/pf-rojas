@@ -485,7 +485,7 @@ input[type="submit"]:hover {
         background-color: rgba(37, 97, 150, 0.827);
         z-index: 10;
         width: 70vw;
-        height: calc(100vh - 60px);
+        height: calc(100% - 60px);
         transition: all 1s ease;
         align-items: center;
         justify-content: space-around;
@@ -529,5 +529,11 @@ input[type="submit"]:hover {
 
     .portadaInicial {
         height: 850px;
+    }
+}
+
+@media (max-width: 850px) and (orientation: landscape ) {
+    .portadaInicial {
+        height: 450px;
     }
 }
