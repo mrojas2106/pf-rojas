@@ -30,6 +30,7 @@ nav {
 }
 
 .titulo__grande {
+    position: relative;
     color: rgb(224, 240, 254);
     text-decoration: none;
     font-family: 'DynaPuff', cursive;
@@ -37,6 +38,10 @@ nav {
     font-weight: 400;
     padding-left: 60px;
     transition: all 1s ease;
+    animation-name: ingresoIzquierda;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 .titulo__grande:hover {
@@ -122,6 +127,7 @@ nav {
     object-fit: contain;
 }
 
+
 /* Aqui comienza el contenido de la pagina index - noticias - pelicula - series y contacto*/
 
 main {
@@ -172,7 +178,7 @@ main>img {
 }
 
 .tarjeta {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 30px;
     max-width: 300px;
@@ -410,6 +416,37 @@ input[type="submit"]:hover {
     position: relative;
     color: whitesmoke;
 }
+
+.efectoDesaparecer-no {
+    display: none;
+}
+
+.efectoDesaparecer-si {
+    display: flex;
+    position: relative;
+    animation-name: ingresoIzquierda;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.titulo-position {
+    display: block;
+}
+
+@keyframes ingresoIzquierda {
+
+    from {
+        left: -900px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
 
 /* Responsive - Hamburguesa Menu */
 
