@@ -65,6 +65,7 @@ nav {
 
 .menu {
     display: flex;
+    position: relative;
     list-style: none;
     padding-right: 60px;
 }
@@ -93,7 +94,7 @@ nav {
 .portadaInicial {
     display: flex;
     background-color: rgb(255, 127, 80);
-    height: 650px;
+    height: 100vh;
     flex-wrap: wrap;
 }
 
@@ -529,11 +530,5 @@ input[type="submit"]:hover {
 
     .portadaInicial {
         height: 850px;
-    }
-}
-
-@media (max-width: 850px) and (orientation: landscape) {
-    .portadaInicial {
-        height: 450px;
     }
 }
