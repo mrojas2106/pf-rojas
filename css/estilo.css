@@ -527,8 +527,4 @@ input[type="submit"]:hover {
     .portadaInicial__izquierda--subtitulo {
         font-size: 1.5rem;
     }
-
-    .portadaInicial {
-        height: 850px;
-    }
 }
