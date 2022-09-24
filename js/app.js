@@ -17,6 +17,7 @@ function cerrarMenu() {
 openMenuBtn.addEventListener("click", abrirMenu);
 closeMenuBtn.addEventListener("click", cerrarMenu);
 
+
 window.onscroll = function(){
 
   scroll = document.documentElement.scrollTop;

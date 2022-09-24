@@ -180,20 +180,59 @@ main>img {
 
 .tarjeta {
     display: none;
+    position: relative;
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
     max-width: 300px;
-    height: 300px;
+    height: 350px;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 20px;
+    border: 1px solid rgba(196, 191, 191, 0.694);
+    border-radius: 10px;
 }
 
 .tarjeta__imagen {
     width: 298px;
     height: 140px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
     object-fit: cover;
+    position: relative;
+    top: 0;
+}
+
+.tarjeta__titulo {
+    display: block;
+    position: relative;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+    transform: translateY(-25px);
+}
+
+.tarjeta__parrafo {
+    background-color: rgb(83, 167, 240);
+    color: whitesmoke;
+    padding: 6px 6px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    transition: all 1s ease;
+    border-radius: 0px 0px 6px 6px;
+    z-index: 6;
+}
+
+.tarjeta__parrafo:hover {
+    height: 210px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.tarjeta__parrafo::before {
+    content: '';
+    position: absolute;
+    border-left: 25px solid #f0ad4e;
+    border-top: 20px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: translateY(-21px) translateX(-60px) rotate(220deg);
 }
 
 .categoriasTop {
