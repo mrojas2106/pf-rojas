@@ -1,0 +1,29 @@
+.efectoDesaparecer-no {
+    display: none;
+}
+
+.efectoDesaparecer-si {
+    display: flex;
+    position: relative;
+    animation-name: ingresoIzquierda;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.titulo-position {
+    display: block;
+}
+
+@keyframes ingresoIzquierda {
+
+    from {
+        left: -900px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}

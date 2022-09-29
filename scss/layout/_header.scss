@@ -1,0 +1,74 @@
+header {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(37, 98, 150);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo__grande {
+    position: relative;
+    color: rgb(224, 240, 254);
+    text-decoration: none;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.438rem;
+    font-weight: 400;
+    padding-left: 60px;
+    transition: all 1s ease;
+    animation-name: ingresoIzquierda;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.titulo__grande:hover {
+    color: rgba(83, 167, 240, 0.641);
+}
+
+.menu-hamburguesa {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-hamburguesa img {
+    width: 50px;
+    height: 50px;
+}
+
+.cerrar-menu-hamburguesa {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    list-style: none;
+    padding-right: 60px;
+}
+
+.menu a {
+    padding: 17px;
+    text-decoration: none;
+    color: rgb(84, 171, 248);
+    transition: all .5s ease;
+    font-size: 1.187rem;
+}
+
+.menu a:hover {
+    color: whitesmoke;
+    background-color: rgb(83, 167, 240);
+    cursor: pointer;
+}
+
+.menu__active>a {
+    color: whitesmoke;
+    background-color: rgb(83, 167, 240);
+}

@@ -1,0 +1,97 @@
+@import "./base/reset";
+@import "./base/typography";
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./layout/header";
+@import "./layout/flex";
+@import "./layout/portada";
+@import "./layout/forms";
+@import "./layout/footer";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/effects";
+@import "./pages/index";
+@import "./pages/noticias";
+@import "./pages/peliculas";
+@import "./pages/series";
+@import "./pages/contacto";
+
+
+@media (max-width: 1024px) {
+
+    .portadaInicial__izquierda-md {
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portadaInicial__derecha-md {
+        display: none;
+    }
+
+    .series-collage {
+        padding: 0px 10px;
+    }
+
+    iframe {
+        width: 80vw;
+    }
+}
+
+/* Menu Hamburguesa */
+
+@media (max-width: 715px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        left: -70vw;
+        top: 60px;
+        background-color: rgba(37, 97, 150, 0.827);
+        z-index: 10;
+        width: 70vw;
+        height: calc(100vh - 60px);
+        transition: all 1s ease;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu-active {
+        left: 0;
+    }
+
+    .menu a {
+        position: relative;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .noMostrar {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+}
+
+/* form responsive */
+
+@media (max-width: 450px) {
+    input:not(input[type="submit"]), textarea {
+        width: 90vw;
+    }
+
+    .portadaInicial__izquierda--titulo {
+        font-size: 6.5rem;
+    }
+
+    .portadaInicial__izquierda--subtitulo {
+        font-size: 1.5rem;
+    }
+}

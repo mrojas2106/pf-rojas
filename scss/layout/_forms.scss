@@ -1,0 +1,42 @@
+input:not(input[type="submit"]), textarea {
+    border-radius: 10px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 2rem;
+    padding: 0 20px;
+    transition: all 1s ease;
+}
+
+textarea {
+    height: 300px;
+    width: 400px;
+}
+
+input:focus, textarea:focus {
+    border-width: 3px;
+    border-color: rgb(37, 98, 150);
+    background-color: rgba(137, 43, 226, 0.287);
+}
+
+form>label {
+    padding: 20px 0;
+}
+
+input[type="submit"] {
+    align-self: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    border: solid 4px rgb(110, 194, 250);
+    background-color: rgba(110, 201, 244, 0.258);
+    font-size: 1.6rem;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(110, 202, 244, 0.777);
+    border-width: 3px;
+}

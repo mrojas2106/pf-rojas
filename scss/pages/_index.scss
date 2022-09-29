@@ -1,0 +1,52 @@
+.portadaInicial {
+    display: flex;
+    background-color: rgb(255, 127, 80);
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.portadaInicial__izquierda {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portadaInicial__izquierda--titulo {
+    font-size: 7.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.portadaInicial__izquierda--subtitulo {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.portadaInicial__derecha {
+    display: flex;
+    min-width: 40vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.portadaInicial__derecha--imagen {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.peliculasTop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.categoriasTop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    gap: 50px;
+    justify-content: center;
+}
