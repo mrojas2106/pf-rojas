@@ -1,8 +1,8 @@
-@import "./base/reset";
-@import "./base/typography";
 @import "./abstracts/variables";
 @import "./abstracts/functions";
 @import "./abstracts/mixins";
+@import "./base/reset";
+@import "./base/typography";
 @import "./layout/header";
 @import "./layout/flex";
 @import "./layout/portada";
@@ -83,7 +83,9 @@
 /* form responsive */
 
 @media (max-width: 450px) {
-    input:not(input[type="submit"]), textarea {
+
+    input:not(input[type="submit"]),
+    textarea {
         width: 90vw;
     }
 

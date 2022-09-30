@@ -8,7 +8,7 @@ nav {
     display: flex;
     width: 100vw;
     height: 60px;
-    background-color: rgb(37, 98, 150);
+    background-color: $primary-color;
     justify-content: space-between;
     align-items: center;
 }
@@ -63,12 +63,12 @@ nav {
 }
 
 .menu a:hover {
-    color: whitesmoke;
-    background-color: rgb(83, 167, 240);
+    color: $color-active;
+    background-color: $secundary-color;
     cursor: pointer;
 }
 
 .menu__active>a {
-    color: whitesmoke;
+    color: $color-active;
     background-color: rgb(83, 167, 240);
 }

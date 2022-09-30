@@ -15,8 +15,8 @@ textarea {
 
 input:focus, textarea:focus {
     border-width: 3px;
-    border-color: rgb(37, 98, 150);
-    background-color: rgba(137, 43, 226, 0.287);
+    border-color: $primary-color;
+    background-color: $secundary-color;
 }
 
 form>label {
@@ -28,8 +28,8 @@ input[type="submit"] {
     width: 200px;
     height: 60px;
     border-radius: 20px;
-    border: solid 4px rgb(110, 194, 250);
-    background-color: rgba(110, 201, 244, 0.258);
+    border: solid 4px $secundary-color;
+    background-color: $primary-color;
     font-size: 1.6rem;
     margin: 20px 0;
     cursor: pointer;
@@ -37,6 +37,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: rgba(110, 202, 244, 0.777);
+    background-color: $secundary-color;
     border-width: 3px;
 }

@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: auto;
-    background-color: rgb(37, 98, 150);
+    background-color: $primary-color;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 30px 80px;
@@ -11,24 +11,24 @@
 .piePagina__lista {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: $color-active;
     justify-content: space-around;
     font-size: 0, 9375rem;
 }
 
 .piePagina__lista a {
-    color: rgb(110, 194, 250);
+    color: $secundary-color;
     align-self: center;
 }
 
 .piePagina__lista a:hover {
-    color: whitesmoke;
+    color: $color-active;
     cursor: pointer;
 }
 
 .piePagina__titulo-footer h6 {
     font-size: 30px;
-    color: rgb(83, 167, 240);
+    color: $secundary-color;
     padding-top: 30px;
 }
 
@@ -53,5 +53,5 @@
 .piePagina span {
     display: inline-flex;
     position: relative;
-    color: whitesmoke;
+    color: $color-active;
 }

@@ -6,7 +6,7 @@
     max-width: 300px;
     height: 350px;
     text-align: center;
-    border: 1px solid rgba(196, 191, 191, 0.694);
+    border: $border-card-button;
     border-radius: 6px;
 }
 
@@ -22,13 +22,13 @@
 .tarjeta__titulo {
     display: block;
     position: relative;
-    font-size: 1.2rem;
+    font-size: $baseline-text;
     transition: all 1s ease;
     transform: translateY(-25px);
 }
 
 .tarjeta__parrafo {
-    background-color: rgb(83, 167, 240);
+    background-color: $secundary-color;
     color: whitesmoke;
     padding: 6px 6px;
     overflow: hidden;
@@ -42,14 +42,13 @@
 
 .tarjeta__parrafo:hover {
     height: 210px;
-    color: whitesmoke;
     cursor: pointer;
 }
 
 .tarjeta__parrafo::before {
     content: '';
     position: absolute;
-    border-left: 25px solid #f0ad4e;
+    border-left: 25px solid $terciary-color;
     border-top: 20px solid transparent;
     border-bottom: 25px solid transparent;
     transform: translateY(-21px) translateX(-60px) rotate(220deg);
@@ -59,9 +58,9 @@
     width: 60%;
     padding: 5px;
     margin-top: 5px;
-    background-color: #fd9e04;
+    background-color: $terciary-color;
     border-style: none;
-    border: 1px solid gray;
+    border: $border-card-button;
     border-radius: 5px;
     font-weight: bolder;
 }
@@ -78,23 +77,23 @@
     height: 300px;
     width: 300px;
     text-align: center;
-    border: 1px solid rgba(227, 227, 227, 0.623);
+    border: $border-card-button;
     justify-content: space-evenly;
-    background-color: rgba(83, 167, 240, 0.51);
+    background-color: $secundary-color;
     /* background-image: url("../assets/imagenes/terror-top3.jpg"); */
     background-size: cover;
     border-radius: 6px;
 }
 
 .tarjeta__categoria--titulo {
-    font-size: 1.25rem;
+    font-size: $baseline-text;
 }
 
 .tarjeta__cetegoria a {
     text-decoration: none;
     padding: 10px;
     background-color: black;
-    color: white;
+    color: $color-active;
     width: 200px;
     align-self: center;
     cursor: pointer;
@@ -103,7 +102,7 @@
 }
 
 .tarjeta__cetegoria a:hover {
-    background-color: rgba(237, 134, 83, 0.572);
+    background-color: $terciary-color;
     color: black;
 }
 
@@ -129,11 +128,11 @@
 
 .boxes h4 {
     text-align: center;
-    color: rgb(83, 167, 240);
+    color: $secundary-color;
 }
 
 .boxes span {
     font-weight: bolder;
-    font-size: 0.75rem;
-    color: grey;
+    font-size: $span-text;
+    color: $gray-color;
 }
