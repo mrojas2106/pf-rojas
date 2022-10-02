@@ -49,9 +49,9 @@
     content: '';
     position: absolute;
     border-left: 25px solid $terciary-color;
-    border-top: 20px solid transparent;
+    border-top: 15px solid transparent;
     border-bottom: 25px solid transparent;
-    transform: translateY(-21px) translateX(-60px) rotate(220deg);
+    transform: translateY(-27px) translateX(-28px) rotate(238deg);
 }
 
 .tarjeta__parrafo button {
@@ -129,6 +129,10 @@
 .boxes h4 {
     text-align: center;
     color: $secundary-color;
+}
+
+.boxes p {
+    padding: 0px 5px;
 }
 
 .boxes span {

@@ -303,9 +303,9 @@ input[type=submit]:hover {
   content: "";
   position: absolute;
   border-left: 25px solid rgb(255, 127, 80);
-  border-top: 20px solid transparent;
+  border-top: 15px solid transparent;
   border-bottom: 25px solid transparent;
-  transform: translateY(-21px) translateX(-60px) rotate(220deg);
+  transform: translateY(-27px) translateX(-28px) rotate(238deg);
 }
 
 .tarjeta__parrafo button {
@@ -382,6 +382,10 @@ input[type=submit]:hover {
 .boxes h4 {
   text-align: center;
   color: rgb(83, 167, 240);
+}
+
+.boxes p {
+  padding: 0px 5px;
 }
 
 .boxes span {
