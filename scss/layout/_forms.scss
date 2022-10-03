@@ -11,9 +11,14 @@ input:not(input[type="submit"]), textarea {
 textarea {
     height: 300px;
     width: 400px;
+    &:focus {
+        border-width: 3px;
+        border-color: $primary-color;
+        background-color: $secundary-color;
+    }
 }
 
-input:focus, textarea:focus {
+input:focus {
     border-width: 3px;
     border-color: $primary-color;
     background-color: $secundary-color;
@@ -34,9 +39,8 @@ input[type="submit"] {
     margin: 20px 0;
     cursor: pointer;
     transition: all 1s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: $secundary-color;
-    border-width: 3px;
+    &:hover {
+        background-color: $secundary-color;
+        border-width: 3px;
+    }
 }

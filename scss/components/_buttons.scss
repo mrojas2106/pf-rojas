@@ -1,15 +1,30 @@
+.tarjeta__parrafo button {
+    width: 60%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: $terciary-color;
+    border-style: none;
+    border: $border-card-button;
+    border-radius: 5px;
+    font-weight: bolder;
+    &:hover {
+        background-color: #fcbe5a;
+        cursor: pointer;
+    }
+}
+
+
 .paginas {
     display: flex;
     justify-content: center;
     width: 400px;
     margin-bottom: 30px;
+    & label {
+        display: block;
+        margin-top: 10px;
+    }
+    & a {
+        margin: 10px;
+    }
 }
 
-.paginas label {
-    display: block;
-    margin-top: 10px;
-}
-
-.paginas a {
-    margin: 10px;
-}

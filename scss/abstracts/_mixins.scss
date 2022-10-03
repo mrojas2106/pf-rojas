@@ -1,0 +1,22 @@
+@mixin cards($size:300px, $color:none, $justify: none, $alto:350px) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 70px;
+    max-width: $size;
+    height: $alto;
+    text-align: center;
+    border: $border-card-button;
+    border-radius: 6px;
+    background-color: $color;
+    justify-content: $justify;
+}
+
+@mixin  box() {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    justify-content: space-between;
+}

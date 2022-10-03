@@ -1,142 +1,103 @@
 .tarjeta {
+    @include cards();
     display: none;
-    position: relative;
-    flex-direction: column;
-    gap: 70px;
-    max-width: 300px;
-    height: 350px;
-    text-align: center;
-    border: $border-card-button;
-    border-radius: 6px;
-}
 
-.tarjeta__imagen {
-    width: 298px;
-    height: 140px;
-    border-radius: 6px 6px 0px 0px;
-    object-fit: cover;
-    position: relative;
-    top: 0;
-}
+    &__imagen {
+        width: 298px;
+        height: 140px;
+        border-radius: 6px 6px 0px 0px;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+    }
 
-.tarjeta__titulo {
-    display: block;
-    position: relative;
-    font-size: $baseline-text;
-    transition: all 1s ease;
-    transform: translateY(-25px);
-}
+    &__titulo {
+        display: block;
+        position: relative;
+        font-size: $baseline-text;
+        transition: all 1s ease;
+        transform: translateY(-25px);
+    }
 
-.tarjeta__parrafo {
-    background-color: $secundary-color;
-    color: whitesmoke;
-    padding: 6px 6px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    height: 75px;
-    transition: all 1s ease;
-    border-radius: 0px 0px 6px 6px;
-    z-index: 6;
-}
+    &__parrafo {
+        background-color: $secundary-color;
+        color: whitesmoke;
+        padding: 6px 6px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        height: 75px;
+        transition: all 1s ease;
+        border-radius: 0px 0px 6px 6px;
+        z-index: 6;
 
-.tarjeta__parrafo:hover {
-    height: 210px;
-    cursor: pointer;
-}
-
-.tarjeta__parrafo::before {
-    content: '';
-    position: absolute;
-    border-left: 25px solid $terciary-color;
-    border-top: 15px solid transparent;
-    border-bottom: 25px solid transparent;
-    transform: translateY(-27px) translateX(-28px) rotate(238deg);
-}
-
-.tarjeta__parrafo button {
-    width: 60%;
-    padding: 5px;
-    margin-top: 5px;
-    background-color: $terciary-color;
-    border-style: none;
-    border: $border-card-button;
-    border-radius: 5px;
-    font-weight: bolder;
-}
-
-.tarjeta__parrafo button:hover {
-    background-color: #fcbe5a;
-    cursor: pointer;
+        &:hover {
+            height: 210px;
+            cursor: pointer;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            border-left: 25px solid $terciary-color;
+            border-top: 15px solid transparent;
+            border-bottom: 25px solid transparent;
+            transform: translateY(-27px) translateX(-28px) rotate(238deg);
+        }
+    }
 }
 
 
 .tarjeta__cetegoria {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
+    @include cards(auto, $secundary-color, space-evenly, 300px);
     width: 300px;
-    text-align: center;
-    border: $border-card-button;
-    justify-content: space-evenly;
-    background-color: $secundary-color;
-    /* background-image: url("../assets/imagenes/terror-top3.jpg"); */
-    background-size: cover;
-    border-radius: 6px;
+
+    &--titulo {
+        font-size: $baseline-text;
+    }
+
+    & a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: black;
+        color: $color-active;
+        width: 200px;
+        align-self: center;
+        cursor: pointer;
+        transition: all .6s ease;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: $terciary-color;
+            color: black;
+        }
+    }
 }
 
-.tarjeta__categoria--titulo {
-    font-size: $baseline-text;
-}
 
-.tarjeta__cetegoria a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: black;
-    color: $color-active;
-    width: 200px;
-    align-self: center;
-    cursor: pointer;
-    transition: all .6s ease;
-    border-radius: 50px;
-}
-
-.tarjeta__cetegoria a:hover {
-    background-color: $terciary-color;
-    color: black;
-}
 
 .boxes {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    justify-content: space-between;
-}
+    @include box();
 
-.boxes:hover {
-    transform: scale(102%);
-    cursor: pointer;
-}
+    &:hover {
+        transform: scale(102%);
+        cursor: pointer;
+    }
 
-.boxes img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-}
-
-.boxes h4 {
-    text-align: center;
-    color: $secundary-color;
-}
-
-.boxes p {
-    padding: 0px 5px;
-}
-
-.boxes span {
-    font-weight: bolder;
-    font-size: $span-text;
-    color: $gray-color;
+    & img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    & h4 {
+        text-align: center;
+        color: $secundary-color;
+    }
+    & p {
+        padding: 0px 5px;
+    }
+    & span {
+        font-weight: bolder;
+        font-size: $span-text;
+        color: $gray-color;
+    }
 }

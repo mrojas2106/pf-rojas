@@ -4,36 +4,32 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 50px;
+    & h2 {
+        margin: 0 auto;
+        font-size: 2.1875rem;
+        color: $secundary-color;
+        padding: 60px 40px;
+        text-decoration: overline 5px;
+        text-align: center;
+    }
+    & h3 {
+        text-align: center;
+        padding: 0px 10px;
+    }
+    &>h4 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 60px 0px;
+        color: $terciary-color;
+    }
+    &>h6 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $terciary-color;
+        padding-top: 60px;
+    }
+    &>img {
+        padding-bottom: 60px;
+    }
 }
 
-main h2 {
-    margin: 0 auto;
-    font-size: 2.1875rem;
-    color: $secundary-color;
-    padding: 60px 40px;
-    text-decoration: overline 5px;
-    text-align: center;
-}
-
-main h3 {
-    text-align: center;
-    padding: 0px 10px;
-}
-
-main>h4 {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 60px 0px;
-    color: $terciary-color;
-}
-
-main>h6 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: $terciary-color;
-    padding-top: 60px;
-}
-
-main>img {
-    padding-bottom: 60px;
-}

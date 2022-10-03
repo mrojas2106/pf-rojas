@@ -9,13 +9,13 @@
     margin-top: 60px;
     margin-bottom: 60px;
     gap: 50px;
-}
 
-.contacto form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+    & form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
 }

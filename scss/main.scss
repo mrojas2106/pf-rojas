@@ -1,5 +1,4 @@
 @import "./abstracts/variables";
-@import "./abstracts/functions";
 @import "./abstracts/mixins";
 @import "./base/reset";
 @import "./base/typography";
@@ -8,8 +7,8 @@
 @import "./layout/portada";
 @import "./layout/forms";
 @import "./layout/footer";
-@import "./components/buttons";
 @import "./components/cards";
+@import "./components/buttons";
 @import "./components/effects";
 @import "./pages/index";
 @import "./pages/noticias";
