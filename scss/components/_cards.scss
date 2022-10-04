@@ -1,3 +1,5 @@
+/* Tarjetas y Boxes para las paginas index, series, peliculas y noticias */
+
 .tarjeta {
     @include cards();
     display: none;
@@ -47,12 +49,13 @@
 }
 
 
-.tarjeta__cetegoria {
+.tarjeta__cetegoria{
     @include cards(auto, $secundary-color, space-evenly, 300px);
     width: 300px;
 
     &--titulo {
-        font-size: $baseline-text;
+        font-size: $baseline-text*1.5;
+        font-weight: bold;
     }
 
     & a {

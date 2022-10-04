@@ -11,11 +11,9 @@
 @import "./components/buttons";
 @import "./components/effects";
 @import "./pages/index";
-@import "./pages/noticias";
-@import "./pages/peliculas";
-@import "./pages/series";
 @import "./pages/contacto";
 
+/* Portadas Responsive */
 
 @media (max-width: 1024px) {
 
@@ -56,16 +54,14 @@
         transition: all 1s ease;
         align-items: center;
         justify-content: space-around;
-    }
-
-    .menu-active {
-        left: 0;
-    }
-
-    .menu a {
-        position: relative;
-        color: white;
-        font-size: 2rem;
+        &-active {
+            left: 0;
+        }
+        & a {
+            position: relative;
+            color: white;
+            font-size: 2rem;
+        }
     }
 
     .noMostrar {

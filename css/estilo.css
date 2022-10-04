@@ -1,3 +1,4 @@
+/* Reseteo CSS */
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +9,12 @@ a {
   text-decoration: none;
 }
 
+/* Tipografia para toda la web */
 body {
   font-family: "Nunito", sans-serif;
 }
 
+/* Header y barra de navegacion */
 header {
   position: fixed;
   z-index: 3;
@@ -82,6 +85,7 @@ nav {
   background-color: rgb(83, 167, 240);
 }
 
+/* Estructura principal FLEX de las paginas */
 main {
   display: flex;
   flex-direction: column;
@@ -125,6 +129,7 @@ main > img {
   padding: 50px 0px;
 }
 
+/* Formulario de la pagina contacto */
 input:not(input[type=submit]), textarea {
   border-radius: 10px;
   height: 50px;
@@ -172,6 +177,7 @@ input[type=submit]:hover {
   border-width: 3px;
 }
 
+/* Footer de las paginas */
 .piePagina {
   display: flex;
   width: 100%;
@@ -222,6 +228,7 @@ input[type=submit]:hover {
   color: whitesmoke;
 }
 
+/* Tarjetas y Boxes para las paginas index, series, peliculas y noticias */
 .tarjeta {
   display: flex;
   position: relative;
@@ -291,7 +298,8 @@ input[type=submit]:hover {
   width: 300px;
 }
 .tarjeta__cetegoria--titulo {
-  font-size: 1.25rem;
+  font-size: 1.875rem;
+  font-weight: bold;
 }
 .tarjeta__cetegoria a {
   text-decoration: none;
@@ -339,6 +347,7 @@ input[type=submit]:hover {
   color: rgba(196, 191, 191, 0.694);
 }
 
+/* Boton de tarjeta y eleccion de paginas */
 .tarjeta__parrafo button {
   width: 60%;
   padding: 5px;
@@ -368,6 +377,7 @@ input[type=submit]:hover {
   margin: 10px;
 }
 
+/* Efectos fade de la pagina Index */
 .efectoDesaparecer-no {
   display: none;
 }
@@ -395,6 +405,7 @@ input[type=submit]:hover {
     opacity: 1;
   }
 }
+/* Portadas Index */
 .portadaInicial {
   display: flex;
   background-color: rgb(255, 127, 80);
@@ -442,6 +453,7 @@ input[type=submit]:hover {
   justify-content: center;
 }
 
+/* Pagina Contactos */
 .contacto {
   display: flex;
   flex-direction: column;
@@ -463,6 +475,7 @@ input[type=submit]:hover {
   padding: 50px;
 }
 
+/* Portadas Responsive */
 @media (max-width: 1024px) {
   .portadaInicial__izquierda-md {
     width: 100vw;
