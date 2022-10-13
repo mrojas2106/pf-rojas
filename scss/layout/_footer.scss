@@ -2,20 +2,27 @@
 
 .piePagina {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 100vw;
     background-color: $primary-color;
+    &__conteiner{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 30px 80px;
-    &__lista {
+    gap: 20px;
+    padding: 40px 40px;
+    &--lista {
         display: flex;
         flex-direction: column;
         color: $color-active;
         justify-content: space-around;
+        gap:20px;
         font-size: 0, 9375rem;
         & a {
-            color: $secundary-color;
+            color: $color-list-footer;
             align-self: center;
             &:hover {
                 color: $color-active;
@@ -23,23 +30,22 @@
             }
         }
     }
-    &__titulo-footer h6 {
+    &--titulo-footer h6 {
         font-size: 30px;
         color: $secundary-color;
-        padding-top: 30px;
     }
-    &__parrafo {
+    &--parrafo {
         width: 250px;
         overflow: hidden;
         padding: 30px 0;
-        color: #3b3640;
+        color: $color-active;
     }
-    &__redes {
+    &--redes {
         display: flex;
         flex-direction: column;
         padding: 25px 0;
     }
-    &__redes img {
+    &--redes img {
         width: 32px;
         height: 32px;
     }
@@ -47,6 +53,9 @@
         display: inline-flex;
         position: relative;
         color: $color-active;
+        top: -10px;
+        margin-left: 5px;
     }
+}
 }
 

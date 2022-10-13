@@ -15,6 +15,12 @@
 
 /* Portadas Responsive */
 
+@media (max-width: 1170px) {
+    .piePagina__conteiner{
+        width: 100%;
+        }
+}
+
 @media (max-width: 1024px) {
 
     .portadaInicial__izquierda-md {
@@ -73,6 +79,10 @@
         margin-right: 50px;
         cursor: pointer;
     }
+    .piePagina__conteiner{
+        
+        padding: 40px 10px;
+        }
 }
 
 /* form responsive */
