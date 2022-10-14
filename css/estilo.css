@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Tipografia para toda la web */
 body {
   font-family: "Nunito", sans-serif;
