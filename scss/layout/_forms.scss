@@ -1,6 +1,7 @@
 /* Formulario de la pagina contacto */
 
-input:not(input[type="submit"]), textarea {
+input:not(input[type="submit"]),
+textarea {
     border-radius: 10px;
     height: 50px;
     border-style: solid;
@@ -13,6 +14,7 @@ input:not(input[type="submit"]), textarea {
 textarea {
     height: 300px;
     width: 400px;
+
     &:focus {
         border-width: 3px;
         border-color: $primary-color;
@@ -41,6 +43,7 @@ input[type="submit"] {
     margin: 20px 0;
     cursor: pointer;
     transition: all 1s ease;
+
     &:hover {
         background-color: $secundary-color;
         border-width: 3px;

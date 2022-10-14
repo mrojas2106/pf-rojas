@@ -111,7 +111,7 @@ main > h4 {
   padding: 60px 0px;
   color: rgb(255, 127, 80);
 }
-main > h6 {
+main > h5 {
   text-align: center;
   font-size: 2.5rem;
   color: rgb(255, 127, 80);
@@ -129,8 +129,48 @@ main > img {
   padding: 50px 0px;
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  position: fixed;
+  top: -100vh;
+  margin: 0 0;
+  height: 90vh;
+  width: 80vw;
+  transition: all 0.5s;
+  z-index: 5;
+}
+.modal iframe {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+.modal span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  font-size: 2.5rem;
+  color: whitesmoke;
+  border: solid 1px white;
+  margin-right: 2px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.modal-active {
+  top: 60px;
+}
+
 /* Formulario de la pagina contacto */
-input:not(input[type=submit]), textarea {
+input:not(input[type=submit]),
+textarea {
   border-radius: 10px;
   height: 50px;
   border-style: solid;
@@ -466,22 +506,18 @@ input[type=submit]:hover {
 .contacto {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
-  justify-items: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 60px;
   margin-bottom: 60px;
-  gap: 50px;
 }
 .contacto form {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 50px;
 }
 .contacto iframe {
   width: 100%;
@@ -545,6 +581,12 @@ input[type=submit]:hover {
   .piePagina__conteiner {
     padding: 40px 10px;
   }
+  .modal {
+    width: 100vw;
+  }
+  .modal iframe {
+    width: 95vw;
+  }
 }
 /* form responsive */
 @media (max-width: 450px) {
@@ -557,6 +599,9 @@ textarea {
   }
   .portadaInicial__izquierda--subtitulo {
     font-size: 1.5rem;
+  }
+  .modal {
+    width: 95vw;
   }
 }
 

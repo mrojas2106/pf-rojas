@@ -5,6 +5,7 @@
 @import "./layout/header";
 @import "./layout/flex";
 @import "./layout/portada";
+@import "./layout/modals";
 @import "./layout/forms";
 @import "./layout/footer";
 @import "./components/cards";
@@ -16,9 +17,9 @@
 /* Portadas Responsive */
 
 @media (max-width: 1170px) {
-    .piePagina__conteiner{
+    .piePagina__conteiner {
         width: 100%;
-        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -60,9 +61,11 @@
         transition: all 1s ease;
         align-items: center;
         justify-content: space-around;
+
         &-active {
             left: 0;
         }
+
         & a {
             position: relative;
             color: white;
@@ -79,10 +82,18 @@
         margin-right: 50px;
         cursor: pointer;
     }
-    .piePagina__conteiner{
-        
+
+    .piePagina__conteiner {
+
         padding: 40px 10px;
+    }
+
+    .modal {
+        width: 100vw;
+        & iframe {
+            width: 95vw;
         }
+    }
 }
 
 /* form responsive */
@@ -100,5 +111,9 @@
 
     .portadaInicial__izquierda--subtitulo {
         font-size: 1.5rem;
+    }
+
+    .modal {
+        width: 95vw;
     }
 }
