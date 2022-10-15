@@ -37,6 +37,7 @@
             height: 210px;
             cursor: pointer;
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -49,7 +50,7 @@
 }
 
 
-.tarjeta__cetegoria{
+.tarjeta__cetegoria {
     @include cards(auto, $secundary-color, space-evenly, 300px);
     width: 300px;
 
@@ -91,13 +92,36 @@
         height: 100px;
         object-fit: cover;
     }
-    & h4 {
+
+    & a {
+        position: absolute;
+        top: 25px;
+        left: 85px;
+        border: solid 2px white;
+        padding: 10px 20px;
+        color: white;
+        font-size: $baseline-text;
+        text-align: center;
+        transition: 1s ease;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $color-active;
+            color: $secundary-color;
+            border-radius: 8px;
+            border-color: $secundary-color;
+        }
+    }
+
+    & h3 {
         text-align: center;
         color: $secundary-color;
     }
+
     & p {
         padding: 0px 5px;
     }
+
     & span {
         font-weight: bolder;
         font-size: $span-text;

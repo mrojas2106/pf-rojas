@@ -6,7 +6,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 50px;
-    & h2 {
+    & h1 {
         margin: 0 auto;
         font-size: 2.1875rem;
         color: $secundary-color;
@@ -14,17 +14,17 @@ main {
         text-decoration: overline 5px;
         text-align: center;
     }
-    & h3 {
+    & h2 {
         text-align: center;
         padding: 0px 10px;
     }
-    &>h4 {
+    &>h3 {
         text-align: center;
         font-size: 2.5rem;
         padding: 60px 0px;
         color: $terciary-color;
     }
-    &>h5 {
+    &>h4 {
         text-align: center;
         font-size: 2.5rem;
         color: $terciary-color;
