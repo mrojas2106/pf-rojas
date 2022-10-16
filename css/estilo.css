@@ -535,6 +535,7 @@ input[type=submit]:hover {
   scrollbar-color: blue;
   gap: 15px;
   scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+  padding: 0 10px;
   scrollbar-width: thin;
 }
 .slider-conteiner::-webkit-scrollbar {
@@ -574,7 +575,7 @@ input[type=submit]:hover {
   height: auto;
   top: 130px;
   left: 25px;
-  z-index: 9;
+  z-index: 2;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
