@@ -15,6 +15,7 @@ const cerrarModal3 = document.querySelector(".cerrar3");
 const iframe1 = document.querySelector(".modal__iframe-1");
 const iframe2 = document.querySelector(".modal__iframe-2");
 const iframe3 = document.querySelector(".modal__iframe-3");
+const slider = document.querySelector(".slider-conteiner");
 
 
 function abrirMenu() {
@@ -55,6 +56,10 @@ function cerrarModalf2() {
 function cerrarModalf3() {
   modal3.classList.remove("modal-active");
   iframe3.removeAttribute("src");
+}
+
+function scrollToRight(){
+slider.scrollLeft= 350;
 }
 
 openMenuBtn.addEventListener("click", abrirMenu);
