@@ -336,7 +336,7 @@ input[type=submit]:hover {
   transform: translateY(-27px) translateX(-28px) rotate(238deg);
 }
 
-.tarjeta__cetegoria {
+.tarjeta__categoria {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -350,11 +350,11 @@ input[type=submit]:hover {
   justify-content: space-evenly;
   width: 300px;
 }
-.tarjeta__cetegoria--titulo {
+.tarjeta__categoria--titulo {
   font-size: 1.875rem;
   font-weight: bold;
 }
-.tarjeta__cetegoria a {
+.tarjeta__categoria a {
   text-decoration: none;
   padding: 10px;
   background-color: black;
@@ -365,7 +365,7 @@ input[type=submit]:hover {
   transition: all 0.6s ease;
   border-radius: 50px;
 }
-.tarjeta__cetegoria a:hover {
+.tarjeta__categoria a:hover {
   background-color: rgb(255, 127, 80);
   color: black;
 }
